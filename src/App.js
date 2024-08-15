@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+// // src/App.js
+// import React from "react";
+// import WeatherReport from "./Components/WeatherReport";
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1>Dam Weather Report</h1>
+//       <WeatherReport />
+//     </div>
+//   );
+// }
+
+// export default App;
+// import logo from './logo.svg';
+// import './App.css';
+
+import { Box } from "@chakra-ui/react";
+import { Loading } from "./Components/Loading";
+import { Weather } from "./Components/weather";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box fontFamily="poppins">
+      <Weather />
+    </Box>
   );
 }
 
